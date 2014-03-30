@@ -1,0 +1,16 @@
+<h1> This is detail.html </h1>
+
+
+
+<h1>{{ two.position }}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+<h2> this is detail.html</h2>
+<form action="/two/{{ two.id }}/name/" method="post">
+{% csrf_token %}
+{% for choice in two.choice_set.all %}
+    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+    <label for="choice{{ forloop.counter }}">{{ choice.choice }}</label><br />
+{% endfor %}
+<input type="submit" value="Vote" />
+</form>

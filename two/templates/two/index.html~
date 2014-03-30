@@ -1,0 +1,44 @@
+  {% if latest_poll_list %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <title>{% block title %}My amazing site{% endblock %}</title>
+</head>
+
+<body>
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="http://gvc.in/">Home</a></li>
+            <li><a href="http://127.0.0.1:8000/admin/">Django</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+
+    
+    
+    
+        <h1>Hello !! now i have entered index.html</h1>
+
+<h4>This is the home page </h4>
+<body bgcolor='green'>
+</body>
+
+
+
+<!--
+    
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
+
+-->
+
+    
+    
+ {% endif %} 
